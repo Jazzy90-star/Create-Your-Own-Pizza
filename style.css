@@ -1,0 +1,22 @@
+body {
+  background-image: url("https://as2.ftcdn.net/v2/jpg/05/99/00/79/1000_F_599007953_u3IyNRlZXsZd8pMu2qSdByjDf8PcKWt7.jpg");
+  background-repeat: repeat;
+  margin: 0;
+  max-width: 100%;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: cursive;
+  font-size: 50px;
+  margin: 15px;
+}
+.container-fluid-sm {
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  opacity: 0.95;
+  text-decoration-color: black;
+  margin-top: 15px;
+}

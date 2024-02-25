@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- First row with title -->
+    <div class="container-fluid-sm">
+      <div class="row">
+        <div class="col-12">
+          <h1>Make Your Own Pizza!</h1>
+        </div>
+      </div>
+      <!-- row two begin. This is the header letting people know what the options are -->
+      <div class="row">
+        <div class="col-4">
+          <th><h4>Size: (Select One)</h4></th>
+        </div>
+        <div class="col-4">
+          <th><h4>Crust: (Select One)</h4></th>
+        </div>
+        <div class="col-4">
+          <th><h4>Sauce: (Select One)</h4></th>
+        </div>
+      </div>
+      <!-- Column for size of the pizzas -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="group1"
+                id="radio1"
+                value="option1"
+                required
+              />
+              <label class="form-check-label" for="radio1">Small</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="group1"
+                id="radio2"
+                value="option2"
+              />
+              <label class="form-check-label" for="radio2">Medium</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="group1"
+                id="radio3"
+                value="option3"
+              />
+              <label class="form-check-label" for="radio3">Large</label>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="group2"
+                id="radio4"
+                value="option1"
+                required
+              />
+              <label class="form-check-label" for="radio4">Hand Tossed</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="group2"
+                id="radio5"
+                value="option2"
+              />
+              <label class="form-check-label" for="radio5">Stuffed Crust</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="group2"
+                id="radio6"
+                value="option3"
+              />
+              <label class="form-check-label" for="radio6">Thin Crust</label>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="group3"
+                id="radio7"
+                value="option1"
+                required
+              />
+              <label class="form-check-label" for="radio7">Marinera</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="group3"
+                id="radio8"
+                value="option2"
+              />
+              <label class="form-check-label" for="radio8">Alfredo</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="group3"
+                id="radio9"
+                value="option3"
+              />
+              <label class="form-check-label" for="radio9">Pesto</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- add topping button -->
+      <div class="row">
+        <div class="col-5">
+          <label for="toppings" class="form-label"
+            ><h4>Toppings: (Select Up To 5)</h4></label
+          >
+          <input type="text" class="form-control" id="toppings" required />
+        </div>
+        <div class="col-1">
+          <button id="addButton" class="btn btn-primary btn-sm">Add</button>
+        </div>
+      </div>
+
+      <!-- Table to display selected toppings -->
+      <div class="row">
+        <div class="col">
+          <table class="table" id="toppingsTable">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Table rows will be added here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Submit button -->
+      <div class="row">
+        <div class="col">
+          <button id="Submit" class="btn btn-primary btn-lg">
+            Make Your Pizza!
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./Pizza.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
