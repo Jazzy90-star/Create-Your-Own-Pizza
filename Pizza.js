@@ -1,3 +1,4 @@
+// This is the section where i have my add buttton and i am assiging an event listener to let the program know what to do when i click the add button.
 let addButton = document.getElementById("addButton");
 addButton.addEventListener("click", function () {
   console.log("add button clicked");
@@ -16,6 +17,7 @@ addButton.addEventListener("click", function () {
       cell.textContent = topping;
       let cell2 = newRow.insertCell(1);
 
+      //This is the section for my Delete button. Its in this section so its connected to the table.
       const delete_button = document.createElement("button");
 
       delete_button.innerText = "Delete";
@@ -34,6 +36,7 @@ addButton.addEventListener("click", function () {
     alert("You must enter a topping");
   }
 });
+//This is my event listener for my Make your Pizza. I also included a pop up that lets the user know what thier perfect pizza is. 
 document.addEventListener("DOMContentLoaded", function () {
   var submitBtn = document.getElementById("Submit");
   submitBtn.addEventListener("click", function () {
